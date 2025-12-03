@@ -1,0 +1,45 @@
+# Scala / SBT
+target/
+project/target/
+project/project/target/
+.bloop/
+.metals/
+.bsp/
+.scala-build/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python virtual environment (if any)
+.venv/
+venv/
+__pycache__/
+
+# Stockfish binary (can be downloaded separately)
+stockfish*
+!stockfish*.md
+
+# Local config files
+.env
+*.local
+
+# Compiled files
+*.class
+*.jar
+
+# Test artifacts (can be regenerated)
+test-reports/
+
+# Scoverage data (can be regenerated)
+scoverage-data/

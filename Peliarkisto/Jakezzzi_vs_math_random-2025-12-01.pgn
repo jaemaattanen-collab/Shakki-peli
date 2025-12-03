@@ -1,0 +1,18 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2025.12.01"]
+[Round "-"]
+[White "Jakezzzi"]
+[Black "math_random"]
+[Result "1-0"]
+[WhiteElo "1337"]
+[BlackElo "1336"]
+[TimeControl "180+2"]
+[EndTime "13:35:46 GMT+0000"]
+[Termination "Jakezzzi won by checkmate"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Nc6 4. Bb5 Bd7 5. Nf3 a6 6. Ba4 Bb4 7. Bd2 Nge7 8. exd5
+Nxd5 9. Nxd5 Bxd2+ 10. Qxd2 exd5 11. O-O O-O 12. c3 b5 13. Bc2 Bg4 14. Qf4 Bxf3
+15. Qxf3 Na5 16. b3 Nb7 17. Qf5 g6 18. Qg4 Nd6 19. Rfe1 Re8 20. h4 Qf6 21. h5 c6
+22. h6 Ra7 23. f4 Rae7 24. Re5 a5 25. Rae1 Rxe5 26. fxe5 Qd8 27. e6 Kf8 28. Bxg6
+fxg6 29. Rf1+ Nf5 30. Rxf5+ gxf5 31. Qg7# 1-0

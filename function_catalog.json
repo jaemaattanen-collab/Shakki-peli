@@ -1,0 +1,1843 @@
+[
+  {
+    "file": "src/main/scala/chess/analysis/EngineConfig.scala",
+    "line": 15,
+    "name": "isValid",
+    "signature": "  def isValid: Boolean = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/EngineConfig.scala",
+    "line": 23,
+    "name": "depthDescription",
+    "signature": "  def depthDescription: String = depth match {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/FENGenerator.scala",
+    "line": 17,
+    "name": "generateFEN",
+    "signature": "  def generateFEN(board: Board, controller: GameController): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/FENGenerator.scala",
+    "line": 31,
+    "name": "generatePositionPart",
+    "signature": "  private def generatePositionPart(board: Board): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/FENGenerator.scala",
+    "line": 63,
+    "name": "pieceToFEN",
+    "signature": "  private def pieceToFEN(piece: Piece): Char = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/FENGenerator.scala",
+    "line": 80,
+    "name": "generateCastlingPart",
+    "signature": "  private def generateCastlingPart(board: Board): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/FENGenerator.scala",
+    "line": 129,
+    "name": "generateEnPassantPart",
+    "signature": "  private def generateEnPassantPart(board: Board): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/FENGenerator.scala",
+    "line": 139,
+    "name": "findKing",
+    "signature": "  private def findKing(board: Board, color: String): Option[King] = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/FENGenerator.scala",
+    "line": 150,
+    "name": "parseFEN",
+    "signature": "  def parseFEN(fen: String): Map[String, String] = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/MoveNotationConverter.scala",
+    "line": 17,
+    "name": "uciToChessNotation",
+    "signature": "  def uciToChessNotation(uciMove: String, board: Board): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/MoveNotationConverter.scala",
+    "line": 78,
+    "name": "getDisambiguation",
+    "signature": "  private def getDisambiguation(piece: Piece, fromSquare: String, toSquare: String, board: Board): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 43,
+    "name": "addAnalysisCallback",
+    "signature": "  def addAnalysisCallback(callback: EngineAnalysis => Unit): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 47,
+    "name": "removeAnalysisCallback",
+    "signature": "  def removeAnalysisCallback(callback: EngineAnalysis => Unit): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 54,
+    "name": "start",
+    "signature": "  def start(): Boolean = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 134,
+    "name": "stop",
+    "signature": "  def stop(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 151,
+    "name": "analyzePosition",
+    "signature": "  def analyzePosition(fen: String, depth: Int = -1, multiPV: Int = -1): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 182,
+    "name": "updateConfig",
+    "signature": "  def updateConfig(newConfig: EngineConfig): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 196,
+    "name": "stopAnalysis",
+    "signature": "  def stopAnalysis(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 206,
+    "name": "getBestMove",
+    "signature": "  def getBestMove(fen: String, timeMs: Int = 1000): Future[Option[String]] = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 234,
+    "name": "sendCommand",
+    "signature": "  private def sendCommand(command: String): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 241,
+    "name": "processLine",
+    "signature": "  private def processLine(line: String): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 255,
+    "name": "parseInfoLine",
+    "signature": "  private def parseInfoLine(line: String): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 332,
+    "name": "parseBestMove",
+    "signature": "  private def parseBestMove(line: String): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 352,
+    "name": "notifyCallbacks",
+    "signature": "  private def notifyCallbacks(analysis: EngineAnalysis): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 363,
+    "name": "isRunning",
+    "signature": "  def isRunning: Boolean = isReady"
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 35,
+    "name": "precomputeRotatedImages",
+    "signature": "  private def precomputeRotatedImages(imageName: String): Array[BufferedImage] ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 56,
+    "name": "initializePieces",
+    "signature": "  private def initializePieces(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 80,
+    "name": "generateAttackSquaresBuffer",
+    "signature": "  def generateAttackSquaresBuffer(color: String): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 92,
+    "name": "selectSquare",
+    "signature": "  def selectSquare(square: Square): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 106,
+    "name": "deselectAll",
+    "signature": "  def deselectAll(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 114,
+    "name": "updateSquarePositions",
+    "signature": "  def updateSquarePositions(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 121,
+    "name": "paintComponent",
+    "signature": "  override def paintComponent(g: Graphics2D): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 183,
+    "name": "resetBoard",
+    "signature": "  def resetBoard(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 194,
+    "name": "isWithinBoard",
+    "signature": "  def isWithinBoard(col: Int, row: Int): Boolean = col >= 0 && col < 8 && row >= 0 && row < 8"
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 196,
+    "name": "getSquareAt",
+    "signature": "  def getSquareAt(x: Int, y: Int): Option[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 208,
+    "name": "getSquareByName",
+    "signature": "  def getSquareByName(name: String): Option[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 217,
+    "name": "isKingInCheck",
+    "signature": "  def isKingInCheck(color: String): (Boolean, Square) ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 228,
+    "name": "clearAllHighlights",
+    "signature": "  def clearAllHighlights(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 231,
+    "name": "hasValidMoves",
+    "signature": "  def hasValidMoves(color: String): Boolean ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Square.scala",
+    "line": 16,
+    "name": "isSelected",
+    "signature": "  def isSelected: Boolean = _isSelected"
+  },
+  {
+    "file": "src/main/scala/chess/board/Square.scala",
+    "line": 18,
+    "name": "highlightType",
+    "signature": "  def highlightType: Option[HighlightType] = _highlightType"
+  },
+  {
+    "file": "src/main/scala/chess/board/Square.scala",
+    "line": 20,
+    "name": "resetColor",
+    "signature": "  def resetColor(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Square.scala",
+    "line": 25,
+    "name": "updatePosition",
+    "signature": "  def updatePosition(newPosition: Point): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Square.scala",
+    "line": 35,
+    "name": "clearHighlight",
+    "signature": "  def clearHighlight(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Square.scala",
+    "line": 39,
+    "name": "highlight",
+    "signature": "  def highlight(highlightType: HighlightType): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Square.scala",
+    "line": 42,
+    "name": "select",
+    "signature": "  def select(): Unit = _isSelected = true"
+  },
+  {
+    "file": "src/main/scala/chess/board/Square.scala",
+    "line": 44,
+    "name": "deselect",
+    "signature": "  def deselect(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Square.scala",
+    "line": 49,
+    "name": "getCoordinates",
+    "signature": "  def getCoordinates: (Int, Int) = (position.x / board.Sz, position.y / board.Sz)"
+  },
+  {
+    "file": "src/main/scala/chess/board/Square.scala",
+    "line": 51,
+    "name": "drawWeakness",
+    "signature": "  def drawWeakness(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/board/Square.scala",
+    "line": 55,
+    "name": "draw",
+    "signature": "  def draw(g: Graphics2D, x: Int, y: Int): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 23,
+    "name": "isStalemate",
+    "signature": "  def isStalemate(piece:Piece) = board match"
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 26,
+    "name": "isCheckmate",
+    "signature": "  def isCheckmate(piece:Piece) = board match"
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 31,
+    "name": "selectPiece",
+    "signature": "  def selectPiece(square: Square): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 44,
+    "name": "handlePawnPromotion",
+    "signature": "  def handlePawnPromotion(pawn: PawnPiece, from: Square, to: Square, capturedPiece: Option[Piece]): PieceType ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 50,
+    "name": "deselectPiece",
+    "signature": "  def deselectPiece(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 55,
+    "name": "handleAction",
+    "signature": "  def handleAction(piece: Piece, targetSquare: Square): Boolean ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 78,
+    "name": "checkInsufficientMaterial",
+    "signature": "  def checkInsufficientMaterial(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 92,
+    "name": "isCastlingMove",
+    "signature": "  private def isCastlingMove(piece: Piece, from: Square, to: Square): Boolean ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 100,
+    "name": "executeCastling",
+    "signature": "  private def executeCastling(king: KingPiece, from: Square, to: Square): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 124,
+    "name": "movePiece",
+    "signature": "  private def movePiece(piece: Piece, from: Square, to: Square, isCastlingAction: Boolean = false): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 169,
+    "name": "finalizeMove",
+    "signature": "  def finalizeMove(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 177,
+    "name": "endOfTurnActions",
+    "signature": "  def endOfTurnActions(piece:Piece) ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 197,
+    "name": "resetGame",
+    "signature": "  def resetGame(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 204,
+    "name": "updateAllPossibleMoves",
+    "signature": "  def updateAllPossibleMoves(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 215,
+    "name": "filterMovesToPreventCheck",
+    "signature": "  def filterMovesToPreventCheck(piece: Piece, possibleMoves: List[Square]): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 240,
+    "name": "logMove",
+    "signature": "  def logMove(piece: Piece, from: Square, to: Square, captured: Option[Piece], isCastlingMove: Boolean, promotedPieceType: Option[PieceType], disambiguation: String): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 279,
+    "name": "replayMove",
+    "signature": "  def replayMove(move: Move): Boolean ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 347,
+    "name": "calculateDisambiguation",
+    "signature": "  private def calculateDisambiguation(piece: Piece, from: Square, to: Square): String ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/GameController.scala",
+    "line": 387,
+    "name": "switchPlayer",
+    "signature": "  private def switchPlayer(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 19,
+    "name": "getMoveHistory",
+    "signature": "  def getMoveHistory: List[Move] = moveHistory.toList"
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 21,
+    "name": "clearHistory",
+    "signature": "  def clearHistory() ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 26,
+    "name": "getMoveCount",
+    "signature": "  def getMoveCount: Int = moveHistory.length"
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 28,
+    "name": "getMoveNotations",
+    "signature": "  def getMoveNotations: List[String] ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 37,
+    "name": "trimToSize",
+    "signature": "  def trimToSize(size: Int): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 44,
+    "name": "addMove",
+    "signature": "  def addMove(move: Move): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 50,
+    "name": "addMoveToNotation",
+    "signature": "  def addMoveToNotation(move: Move, notation: String, moveNumber: Int, isWhite: Boolean): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 56,
+    "name": "addPosition",
+    "signature": "  def addPosition(pos: Position): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 59,
+    "name": "isThreefoldRepetition",
+    "signature": "  def isThreefoldRepetition: Boolean ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 62,
+    "name": "generateAlgebraicNotationWithDisambiguation",
+    "signature": "  def generateAlgebraicNotationWithDisambiguation(move: Move, board: Board, disambiguation: String): String ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 93,
+    "name": "isCastlingMove",
+    "signature": "  def isCastlingMove(move: Move): Boolean ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 96,
+    "name": "isKingSideCastling",
+    "signature": "  def isKingSideCastling(move: Move): Boolean ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 99,
+    "name": "isCapture",
+    "signature": "  def isCapture(move: Move): Boolean ="
+  },
+  {
+    "file": "src/main/scala/chess/controllers/MoveHistoryManager.scala",
+    "line": 102,
+    "name": "isCheck",
+    "signature": "  def isCheck(board:Board, piece: Piece): (Boolean, Square) ="
+  },
+  {
+    "file": "src/main/scala/chess/core/AlgebraicNotationParser.scala",
+    "line": 19,
+    "name": "parseAndExecute",
+    "signature": "  def parseAndExecute(notation: String, board: Board, controller: GameController, isWhite: Boolean): Boolean = {"
+  },
+  {
+    "file": "src/main/scala/chess/core/AlgebraicNotationParser.scala",
+    "line": 34,
+    "name": "handleCastling",
+    "signature": "  private def handleCastling(board: Board, controller: GameController, kingside: Boolean, isWhite: Boolean): Boolean = {"
+  },
+  {
+    "file": "src/main/scala/chess/core/AlgebraicNotationParser.scala",
+    "line": 67,
+    "name": "parseRegularMove",
+    "signature": "  private def parseRegularMove(notation: String, board: Board, controller: GameController, isWhite: Boolean): Boolean = {"
+  },
+  {
+    "file": "src/main/scala/chess/core/AlgebraicNotationParser.scala",
+    "line": 131,
+    "name": "findCandidatePieces",
+    "signature": "  private def findCandidatePieces("
+  },
+  {
+    "file": "src/main/scala/chess/core/AlgebraicNotationParser.scala",
+    "line": 166,
+    "name": "canPieceReachSquare",
+    "signature": "  private def canPieceReachSquare(board: Board, fromSquare: Square, toSquare: Square, piece: Piece, isCapture: Boolean): Boolean = {"
+  },
+  {
+    "file": "src/main/scala/chess/core/AlgebraicNotationParser.scala",
+    "line": 207,
+    "name": "isPathBlocked",
+    "signature": "  private def isPathBlocked(board: Board, fromSquare: Square, toSquare: Square): Boolean = {"
+  },
+  {
+    "file": "src/main/scala/chess/core/NotationManager.scala",
+    "line": 15,
+    "name": "addMove",
+    "signature": "  def addMove(moveNotation: String): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/core/NotationManager.scala",
+    "line": 23,
+    "name": "trimToSize",
+    "signature": "  def trimToSize(size: Int): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/core/NotationManager.scala",
+    "line": 34,
+    "name": "getMoves",
+    "signature": "  def getMoves(): List[String] = moves"
+  },
+  {
+    "file": "src/main/scala/chess/core/NotationManager.scala",
+    "line": 39,
+    "name": "getNotation",
+    "signature": "  def getNotation(): String = moves.mkString(\" \")"
+  },
+  {
+    "file": "src/main/scala/chess/core/NotationManager.scala",
+    "line": 44,
+    "name": "clear",
+    "signature": "  def clear(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/core/NotationManager.scala",
+    "line": 51,
+    "name": "getMoveCount",
+    "signature": "  def getMoveCount(): Int = moves.length"
+  },
+  {
+    "file": "src/main/scala/chess/core/NotationManager.scala",
+    "line": 55,
+    "name": "reset",
+    "signature": "  def reset(): Unit = clear()"
+  },
+  {
+    "file": "src/main/scala/chess/intelligent/Tools.scala",
+    "line": 7,
+    "name": "squareIndexes",
+    "signature": "def squareIndexes(board:Board) ="
+  },
+  {
+    "file": "src/main/scala/chess/intelligent/Tools.scala",
+    "line": 23,
+    "name": "hangingPieces",
+    "signature": "def hangingPieces(board: Board): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 17,
+    "name": "preview",
+    "signature": "    def preview(maxMoves: Int = 3): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 29,
+    "name": "addVariation",
+    "signature": "  def addVariation(variation: LiveVariation): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 33,
+    "name": "addVariation",
+    "signature": "  def addVariation("
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 45,
+    "name": "clear",
+    "signature": "  def clear(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 49,
+    "name": "isEmpty",
+    "signature": "  def isEmpty: Boolean = variations.isEmpty"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 51,
+    "name": "getVariations",
+    "signature": "  def getVariations: List[LiveVariation] = variations.toList"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 53,
+    "name": "replaceVariation",
+    "signature": "  def replaceVariation(original: LiveVariation, updatedMoves: List[String], comment: Option[String] = None): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 61,
+    "name": "replaceWithPGNVariations",
+    "signature": "  def replaceWithPGNVariations(game: PGNGame): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 64,
+    "name": "collectVariation",
+    "signature": "    def collectVariation(pgnVariation: PGNVariation): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 88,
+    "name": "variationIndicators",
+    "signature": "  def variationIndicators(maxMoves: Int = 3): Map[Int, List[String]] = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 96,
+    "name": "toPGNVariations",
+    "signature": "  def toPGNVariations: List[PGNVariation] = variations.toList.map(variationToPGN)"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 98,
+    "name": "variationToPGN",
+    "signature": "  private def variationToPGN(lv: LiveVariation): PGNVariation = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 119,
+    "name": "flattenPGNMoves",
+    "signature": "  private def flattenPGNMoves(moves: List[PGNMove]): List[String] ="
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 124,
+    "name": "anchorIndexFromPGN",
+    "signature": "  private def anchorIndexFromPGN(originMoveNumber: Option[Int], originColor: Option[String]): Int ="
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNExporter.scala",
+    "line": 16,
+    "name": "exportGame",
+    "signature": "  def exportGame("
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNExporter.scala",
+    "line": 51,
+    "name": "generateMovesFromHistory",
+    "signature": "  private def generateMovesFromHistory(controller: GameController, options: PGNExportOptions): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNExporter.scala",
+    "line": 61,
+    "name": "exportGameWithHeaders",
+    "signature": "  def exportGameWithHeaders("
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNExporter.scala",
+    "line": 98,
+    "name": "exportPGNGame",
+    "signature": "  def exportPGNGame("
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNExporter.scala",
+    "line": 119,
+    "name": "formatHeaders",
+    "signature": "  private def formatHeaders(headers: Map[String, String]): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNExporter.scala",
+    "line": 127,
+    "name": "formatMovesLine",
+    "signature": "  private def formatMovesLine("
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNExporter.scala",
+    "line": 175,
+    "name": "formatHalfMove",
+    "signature": "  private def formatHalfMove("
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNExporter.scala",
+    "line": 213,
+    "name": "formatVariation",
+    "signature": "  private def formatVariation(variation: PGNVariation, options: PGNExportOptions): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNHeaderBuilder.scala",
+    "line": 14,
+    "name": "defaultFor",
+    "signature": "  def defaultFor(controller: GameController): Map[String, String] = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNHeaderBuilder.scala",
+    "line": 34,
+    "name": "withGameState",
+    "signature": "  def withGameState("
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 23,
+    "name": "loadPGN",
+    "signature": "  def loadPGN(file: File): Either[String, PGNGame] = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 46,
+    "name": "loadPGNFromString",
+    "signature": "  def loadPGNFromString(pgnText: String): Either[String, PGNGame] = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 60,
+    "name": "savePGN",
+    "signature": "  def savePGN(file: File, customHeaders: Map[String, String] = Map.empty): Either[String, Unit] = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 80,
+    "name": "getCurrentPGNString",
+    "signature": "  def getCurrentPGNString: String = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 87,
+    "name": "getCurrentPGN",
+    "signature": "  def getCurrentPGN: Option[PGNGame] = currentPGN"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 92,
+    "name": "getHeaders",
+    "signature": "  def getHeaders: Map[String, String] = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 99,
+    "name": "setHeaders",
+    "signature": "  def setHeaders(headers: Map[String, String]): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 106,
+    "name": "updateHeader",
+    "signature": "  def updateHeader(key: String, value: String): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 114,
+    "name": "getResult",
+    "signature": "  def getResult: Option[String] = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 121,
+    "name": "setResult",
+    "signature": "  def setResult(result: String): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 128,
+    "name": "getPGNMoves",
+    "signature": "  def getPGNMoves: List[PGNMove] = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 135,
+    "name": "convertToPGNMoves",
+    "signature": "  def convertToPGNMoves: List[PGNMove] = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 144,
+    "name": "validatePGN",
+    "signature": "  def validatePGN(pgnText: String): (Boolean, List[String], List[String]) = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 155,
+    "name": "getPGNStats",
+    "signature": "  def getPGNStats: Map[String, Any] = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 181,
+    "name": "clearPGN",
+    "signature": "  def clearPGN(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 188,
+    "name": "hasUnsavedChanges",
+    "signature": "  def hasUnsavedChanges: Boolean = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 194,
+    "name": "buildCurrentGame",
+    "signature": "  private def buildCurrentGame(customHeaders: Map[String, String] = Map.empty): PGNGame = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 216,
+    "name": "attachVariationsToMoves",
+    "signature": "  private def attachVariationsToMoves("
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNMoveBuilder.scala",
+    "line": 15,
+    "name": "fromHalfMoveNotations",
+    "signature": "  def fromHalfMoveNotations(notations: Seq[String], startingMoveNumber: Int = 1): List[PGNMove] = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNMoveBuilder.scala",
+    "line": 34,
+    "name": "fromSanSequence",
+    "signature": "  def fromSanSequence("
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNMoveBuilder.scala",
+    "line": 88,
+    "name": "resultFromWinner",
+    "signature": "  def resultFromWinner(winner: Option[String]): String ="
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 34,
+    "name": "parsePGN",
+    "signature": "  def parsePGN(pgnText: String): PGNParsingResult = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 63,
+    "name": "parseHeaders",
+    "signature": "  private def parseHeaders(lines: Array[String]): (Map[String, String], Int) = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 86,
+    "name": "parseMoves",
+    "signature": "  private def parseMoves(moveText: String): (List[PGNMove], Option[String], List[String], List[String], List[PGNVariation]) = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 109,
+    "name": "parseMoveList",
+    "signature": "  private def parseMoveList("
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 127,
+    "name": "finalizePending",
+    "signature": "    def finalizePending(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 136,
+    "name": "attachVariation",
+    "signature": "    def attachVariation(variation: PGNVariation): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 330,
+    "name": "tokenizeMoves",
+    "signature": "  private def tokenizeMoves(moveText: String): Vector[Token] = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 335,
+    "name": "readWhile",
+    "signature": "    def readWhile(condition: Char => Boolean): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 343,
+    "name": "readSanToken",
+    "signature": "    def readSanToken(): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 446,
+    "name": "hasNext",
+    "signature": "    def hasNext: Boolean = index < tokens.length"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 448,
+    "name": "peek",
+    "signature": "    def peek: Token = tokens(index)"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 450,
+    "name": "peekOption",
+    "signature": "    def peekOption: Option[Token] = if (hasNext) Some(tokens(index)) else None"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 452,
+    "name": "next",
+    "signature": "    def next(): Token = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 462,
+    "name": "isMoveToken",
+    "signature": "  private def isMoveToken(token: String): Boolean = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 471,
+    "name": "combineComments",
+    "signature": "  private def combineComments(existing: Option[String], addition: Option[String]): Option[String] = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 485,
+    "name": "determineStartingColor",
+    "signature": "  private def determineStartingColor(moves: List[PGNMove], fallback: String): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 496,
+    "name": "nagToSymbol",
+    "signature": "  private def nagToSymbol(nag: Int): String = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 531,
+    "name": "hasContent",
+    "signature": "    def hasContent: Boolean = whiteMove.isDefined || blackMove.isDefined"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 533,
+    "name": "setMove",
+    "signature": "    def setMove(color: String, notation: String): Boolean = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 547,
+    "name": "appendComment",
+    "signature": "    def appendComment(color: String, comment: String): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 555,
+    "name": "addAnnotation",
+    "signature": "    def addAnnotation(annotation: PGNAnnotation): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 559,
+    "name": "addVariation",
+    "signature": "    def addVariation(variation: PGNVariation): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNParser.scala",
+    "line": 563,
+    "name": "build",
+    "signature": "    def build(): PGNMove = PGNMove("
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Bishop.scala",
+    "line": 12,
+    "name": "getImage",
+    "signature": "  override def getImage: Image ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Bishop.scala",
+    "line": 17,
+    "name": "calculatePossibleMoves",
+    "signature": "  private def calculatePossibleMoves(): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Bishop.scala",
+    "line": 23,
+    "name": "possibleMoves",
+    "signature": "  override def possibleMoves(): List[Square] = calculatePossibleMoves()"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Bishop.scala",
+    "line": 25,
+    "name": "attackSquares",
+    "signature": "  override def attackSquares(): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Bishop.scala",
+    "line": 47,
+    "name": "updatePossibleMoves",
+    "signature": "  override def updatePossibleMoves(newMoves: List[Square]): Unit = currentPossibleMoves = newMoves"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/DirectionalMovement.scala",
+    "line": 7,
+    "name": "generateDirectionalMoves",
+    "signature": "  protected def generateDirectionalMoves(directions: List[(Int, Int)]): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/King.scala",
+    "line": 11,
+    "name": "getImage",
+    "signature": "  override def getImage: Image ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/King.scala",
+    "line": 16,
+    "name": "calculatePossibleMoves",
+    "signature": "  private def calculatePossibleMoves(): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/King.scala",
+    "line": 44,
+    "name": "canCastle",
+    "signature": "  private def canCastle(col: Int, row: Int, direction: Int): Boolean ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/King.scala",
+    "line": 66,
+    "name": "possibleMoves",
+    "signature": "  override def possibleMoves(): List[Square] = calculatePossibleMoves()"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/King.scala",
+    "line": 68,
+    "name": "attackSquares",
+    "signature": "  override def attackSquares(): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/King.scala",
+    "line": 82,
+    "name": "updatePossibleMoves",
+    "signature": "  override def updatePossibleMoves(newMoves: List[Square]): Unit = currentPossibleMoves = newMoves"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Knight.scala",
+    "line": 13,
+    "name": "getImage",
+    "signature": "  override def getImage: Image ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Knight.scala",
+    "line": 18,
+    "name": "calculatePossibleMoves",
+    "signature": "  private def calculatePossibleMoves(): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Knight.scala",
+    "line": 37,
+    "name": "possibleMoves",
+    "signature": "  override def possibleMoves(): List[Square] = calculatePossibleMoves()"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Knight.scala",
+    "line": 39,
+    "name": "attackSquares",
+    "signature": "  override def attackSquares(): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Knight.scala",
+    "line": 53,
+    "name": "updatePossibleMoves",
+    "signature": "  override def updatePossibleMoves(newMoves: List[Square]): Unit = currentPossibleMoves = newMoves"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Pawn.scala",
+    "line": 12,
+    "name": "getImage",
+    "signature": "  override def getImage: Image ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Pawn.scala",
+    "line": 17,
+    "name": "calculatePossibleMoves",
+    "signature": "  private def calculatePossibleMoves(): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Pawn.scala",
+    "line": 70,
+    "name": "possibleMoves",
+    "signature": "  override def possibleMoves(): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Pawn.scala",
+    "line": 76,
+    "name": "attackSquares",
+    "signature": "  override def attackSquares(): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Pawn.scala",
+    "line": 94,
+    "name": "isEnPassantCapture",
+    "signature": "  def isEnPassantCapture(to: Square): Boolean ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Pawn.scala",
+    "line": 109,
+    "name": "updatePossibleMoves",
+    "signature": "  override def updatePossibleMoves(newMoves: List[Square]): Unit = currentPossibleMoves = newMoves"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Pawn.scala",
+    "line": 111,
+    "name": "moveTo",
+    "signature": "  override def moveTo(to: Square, isSimulation: Boolean = false): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Piece.scala",
+    "line": 14,
+    "name": "getImage",
+    "signature": "  def getImage: Image"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Piece.scala",
+    "line": 16,
+    "name": "possibleMoves",
+    "signature": "  def possibleMoves(): List[Square]"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Piece.scala",
+    "line": 18,
+    "name": "attackSquares",
+    "signature": "  def attackSquares(): List[Square]"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Piece.scala",
+    "line": 21,
+    "name": "updatePossibleMoves",
+    "signature": "  def updatePossibleMoves(newMoves: List[Square]): Unit"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Piece.scala",
+    "line": 23,
+    "name": "moveTo",
+    "signature": "  def moveTo(to: Square, isSimulation: Boolean = false): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Piece.scala",
+    "line": 31,
+    "name": "capture",
+    "signature": "  def capture(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Piece.scala",
+    "line": 37,
+    "name": "promoteTo",
+    "signature": "  def promoteTo(newType: String): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Queen.scala",
+    "line": 12,
+    "name": "getImage",
+    "signature": "  override def getImage: Image ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Queen.scala",
+    "line": 17,
+    "name": "calculatePossibleMoves",
+    "signature": "  private def calculatePossibleMoves(): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Queen.scala",
+    "line": 22,
+    "name": "possibleMoves",
+    "signature": "  override def possibleMoves(): List[Square] = calculatePossibleMoves()"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Queen.scala",
+    "line": 24,
+    "name": "attackSquares",
+    "signature": "  override def attackSquares(): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Queen.scala",
+    "line": 47,
+    "name": "updatePossibleMoves",
+    "signature": "  override def updatePossibleMoves(newMoves: List[Square]): Unit = currentPossibleMoves = newMoves"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Rook.scala",
+    "line": 11,
+    "name": "getImage",
+    "signature": "  override def getImage: Image ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Rook.scala",
+    "line": 16,
+    "name": "calculatePossibleMoves",
+    "signature": "  private def calculatePossibleMoves(): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Rook.scala",
+    "line": 23,
+    "name": "possibleMoves",
+    "signature": "  override def possibleMoves(): List[Square] = calculatePossibleMoves()"
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Rook.scala",
+    "line": 25,
+    "name": "attackSquares",
+    "signature": "  override def attackSquares(): List[Square] ="
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Rook.scala",
+    "line": 48,
+    "name": "updatePossibleMoves",
+    "signature": "  override def updatePossibleMoves(newMoves: List[Square]): Unit = currentPossibleMoves = newMoves"
+  },
+  {
+    "file": "src/main/scala/chess/state/Position.scala",
+    "line": 24,
+    "name": "equals",
+    "signature": "  override def equals(other: Any): Boolean = other match"
+  },
+  {
+    "file": "src/main/scala/chess/state/Position.scala",
+    "line": 28,
+    "name": "hashCode",
+    "signature": "  override def hashCode(): Int = positionKey}"
+  },
+  {
+    "file": "src/main/scala/chess/state/Position.scala",
+    "line": 31,
+    "name": "toString",
+    "signature": "  override def toString: String = {"
+  },
+  {
+    "file": "src/main/scala/chess/state/Position.scala",
+    "line": 42,
+    "name": "fromGameState",
+    "signature": "  def fromGameState(board: Board, controller: GameController): Position ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 98,
+    "name": "applyLoadedSnapshot",
+    "signature": "  def applyLoadedSnapshot(evalLine: String, depthLine: String, body: String): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 105,
+    "name": "snapshotLines",
+    "signature": "  def snapshotLines: Seq[String] ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 108,
+    "name": "loadSnapshotFromFile",
+    "signature": "  def loadSnapshotFromFile(file: java.io.File): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 120,
+    "name": "saveSnapshotToFile",
+    "signature": "  def saveSnapshotToFile(file: java.io.File): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 134,
+    "name": "setAnalysisActive",
+    "signature": "  def setAnalysisActive(enabled: Boolean): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 171,
+    "name": "triggerAnalysisIfActive",
+    "signature": "  def triggerAnalysisIfActive(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 178,
+    "name": "stop",
+    "signature": "  def stop(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 184,
+    "name": "handleEngineAnalysis",
+    "signature": "  private def handleEngineAnalysis(analysis: StockfishEngine#EngineAnalysis): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 193,
+    "name": "updateEvaluationBar",
+    "signature": "  private def updateEvaluationBar(score: Option[Int], mate: Option[Int]): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 219,
+    "name": "renderAnalysisLines",
+    "signature": "  private def renderAnalysisLines(analysis: StockfishEngine#EngineAnalysis): String ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 237,
+    "name": "formatEvaluationText",
+    "signature": "  private def formatEvaluationText(score: Option[Int], mate: Option[Int]): String ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 246,
+    "name": "formatUciMove",
+    "signature": "  private def formatUciMove(uci: String): String ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/DialogManager.scala",
+    "line": 14,
+    "name": "setOwner",
+    "signature": "  def setOwner(window: Window): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/DialogManager.scala",
+    "line": 17,
+    "name": "showAlert",
+    "signature": "  def showAlert(alertType: AlertType, title: String, message: String): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/Game.scala",
+    "line": 9,
+    "name": "main",
+    "signature": "  def main(args: Array[String]): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXBoardView.scala",
+    "line": 41,
+    "name": "cellSize",
+    "signature": "  def cellSize: Double = lastCellSize"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXBoardView.scala",
+    "line": 59,
+    "name": "setSelectedSquare",
+    "signature": "   def setSelectedSquare(row: Int, col: Int): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXBoardView.scala",
+    "line": 64,
+    "name": "clearSelectedSquare",
+    "signature": "   def clearSelectedSquare(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXBoardView.scala",
+    "line": 72,
+    "name": "setLastMove",
+    "signature": "   def setLastMove(fromRow: Int, fromCol: Int, toRow: Int, toCol: Int): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXBoardView.scala",
+    "line": 78,
+    "name": "clearLastMove",
+    "signature": "   def clearLastMove(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXBoardView.scala",
+    "line": 85,
+    "name": "setLegalMoveTargets",
+    "signature": "   def setLegalMoveTargets(coords: Iterable[(Int, Int)]): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXBoardView.scala",
+    "line": 90,
+    "name": "clearLegalMoveTargets",
+    "signature": "   def clearLegalMoveTargets(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXBoardView.scala",
+    "line": 96,
+    "name": "setMoveHints",
+    "signature": "  def setMoveHints(hints: Seq[MoveArrow]): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXBoardView.scala",
+    "line": 105,
+    "name": "loadPieceImage",
+    "signature": "  private def loadPieceImage(color: String, pieceName: String): Option[Image] = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXBoardView.scala",
+    "line": 121,
+    "name": "setModel",
+    "signature": "  def setModel(board: Board): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXBoardView.scala",
+    "line": 136,
+    "name": "refreshFromModel",
+    "signature": "  def refreshFromModel(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXBoardView.scala",
+    "line": 218,
+    "name": "buildArrowLayer",
+    "signature": "  private def buildArrowLayer(cellSize: Double): Option[Pane] = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 93,
+    "name": "triggerAnalysisIfActive",
+    "signature": "  private def triggerAnalysisIfActive(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 107,
+    "name": "startingMoveNumberFromAnchor",
+    "signature": "  private def startingMoveNumberFromAnchor(anchorIndex: Int): Int ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 110,
+    "name": "startingColorFromAnchor",
+    "signature": "  private def startingColorFromAnchor(anchorIndex: Int): String ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 113,
+    "name": "updateVariationMenuState",
+    "signature": "  private def updateVariationMenuState(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 121,
+    "name": "variationIndicatorsForDisplay",
+    "signature": "  private def variationIndicatorsForDisplay(): Map[Int, List[String]] = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 147,
+    "name": "showVariationPicker",
+    "signature": "  private def showVariationPicker(moveIndex: Int): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 179,
+    "name": "startVariationSession",
+    "signature": "  private def startVariationSession(anchorIndex: Int): ActiveVariationSession = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 210,
+    "name": "captureVariationMove",
+    "signature": "  private def captureVariationMove(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 222,
+    "name": "finishActiveVariation",
+    "signature": "  private def finishActiveVariation(save: Boolean, showFeedback: Boolean = true): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 254,
+    "name": "restoreMainlineAfterVariation",
+    "signature": "  private def restoreMainlineAfterVariation(session: ActiveVariationSession): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 268,
+    "name": "restoreBoardFromHistory",
+    "signature": "  private def restoreBoardFromHistory(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 297,
+    "name": "start",
+    "signature": "  override def start(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 334,
+    "name": "choosePromotionPiece",
+    "signature": "  private def choosePromotionPiece(): PieceType = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 351,
+    "name": "applyPromotion",
+    "signature": "  private[chess] def applyPromotion("
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 374,
+    "name": "determineBranchAction",
+    "signature": "  private def determineBranchAction(): BranchDecision ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 392,
+    "name": "promptBranchDecision",
+    "signature": "  private def promptBranchDecision(anchorIndex: Int): BranchDecision = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 451,
+    "name": "prepareOverwrite",
+    "signature": "  private def prepareOverwrite(anchorIndex: Int): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 463,
+    "name": "prepareVariationContinuation",
+    "signature": "  private def prepareVariationContinuation(session: ActiveVariationSession): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 478,
+    "name": "handlePawnPromotion",
+    "signature": "  private def handlePawnPromotion("
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 488,
+    "name": "createMainScene",
+    "signature": "  private def createMainScene(): Scene = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 531,
+    "name": "performMove",
+    "signature": "              def performMove(): Boolean = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 622,
+    "name": "createLabeledBoard",
+    "signature": "  private def createLabeledBoard(): BorderPane = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 626,
+    "name": "fileLabel",
+    "signature": "    def fileLabel(text: String): Label = new Label(text) {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 631,
+    "name": "rankCell",
+    "signature": "    def rankCell(text: String, align: Pos, pad: Insets): StackPane = new StackPane {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 669,
+    "name": "syncWithCellSize",
+    "signature": "    def syncWithCellSize(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 728,
+    "name": "createMenuBar",
+    "signature": "  private def createMenuBar(): MenuBar = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 791,
+    "name": "createAnalysisPanel",
+    "signature": "  private def createAnalysisPanel(): VBox ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 803,
+    "name": "startNewGame",
+    "signature": "  private def startNewGame(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 823,
+    "name": "loadPGNFromChooser",
+    "signature": "  private def loadPGNFromChooser(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 832,
+    "name": "loadPGNFile",
+    "signature": "  private def loadPGNFile(file: File): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 842,
+    "name": "savePGNThroughChooser",
+    "signature": "  private def savePGNThroughChooser(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 861,
+    "name": "loadAnalysisFromFile",
+    "signature": "  private def loadAnalysisFromFile(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 873,
+    "name": "saveAnalysisToFile",
+    "signature": "  private def saveAnalysisToFile(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 887,
+    "name": "applyPGNGame",
+    "signature": "  private def applyPGNGame(game: PGNGame): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 925,
+    "name": "applySanMove",
+    "signature": "  private def applySanMove(notation: String, isWhiteMove: Boolean): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 948,
+    "name": "parseSanMove",
+    "signature": "  private def parseSanMove(notation: String, isWhiteMove: Boolean): Option[ParsedSanMove] = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1032,
+    "name": "defaultDirectory",
+    "signature": "  private def defaultDirectory(name: String): Option[File] = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1041,
+    "name": "ensureExtension",
+    "signature": "  private def ensureExtension(file: File, extension: String): File = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1049,
+    "name": "createMoveHistoryPanel",
+    "signature": "  private def createMoveHistoryPanel(): VBox = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1059,
+    "name": "updateMoveHistoryView",
+    "signature": "  private def updateMoveHistoryView(highlightIndex: Option[Int]): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1067,
+    "name": "currentAnchorIndex",
+    "signature": "  private def currentAnchorIndex: Int = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1073,
+    "name": "updateVariationStatusLabel",
+    "signature": "  private def updateVariationStatusLabel(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1090,
+    "name": "clearVariationSelectionState",
+    "signature": "  private def clearVariationSelectionState(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1095,
+    "name": "refreshVariationSelectionState",
+    "signature": "  private def refreshVariationSelectionState(anchorIndex: Int, variations: Vector[LiveVariation]): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1112,
+    "name": "cycleVariationSelection",
+    "signature": "  private def cycleVariationSelection(delta: Int): Boolean = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1135,
+    "name": "resumeSelectedVariation",
+    "signature": "  private def resumeSelectedVariation(): Boolean = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1149,
+    "name": "resumeSavedVariation",
+    "signature": "  private def resumeSavedVariation(variation: LiveVariation): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1167,
+    "name": "setMoveArrowsEnabled",
+    "signature": "  private def setMoveArrowsEnabled(enabled: Boolean): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1173,
+    "name": "updateMoveArrows",
+    "signature": "  private def updateMoveArrows(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1226,
+    "name": "handleActiveVariationDuringNavigation",
+    "signature": "  private def handleActiveVariationDuringNavigation(targetIndex: Int): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1233,
+    "name": "gotoMoveIndex",
+    "signature": "  private def gotoMoveIndex(targetIndex: Int): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1257,
+    "name": "gotoStartPosition",
+    "signature": "  private def gotoStartPosition(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1264,
+    "name": "gotoLivePosition",
+    "signature": "  private def gotoLivePosition(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1270,
+    "name": "handleMoveHistoryClick",
+    "signature": "  private def handleMoveHistoryClick(moveIndex: Int): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1280,
+    "name": "navigateForward",
+    "signature": "  private def navigateForward(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1297,
+    "name": "navigateBackward",
+    "signature": "  private def navigateBackward(): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1316,
+    "name": "applyLivePosition",
+    "signature": "  private def applyLivePosition(boardView: ScalaFXBoardView, moveIndex: Int): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1353,
+    "name": "stopApp",
+    "signature": "  override def stopApp(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryPanel.scala",
+    "line": 41,
+    "name": "setOnMoveSelected",
+    "signature": "  def setOnMoveSelected(handler: Int => Unit): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryPanel.scala",
+    "line": 44,
+    "name": "clearOnMoveSelected",
+    "signature": "  def clearOnMoveSelected(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryPanel.scala",
+    "line": 47,
+    "name": "setOnVariationSelected",
+    "signature": "  def setOnVariationSelected(handler: Int => Unit): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryPanel.scala",
+    "line": 50,
+    "name": "clearOnVariationSelected",
+    "signature": "  def clearOnVariationSelected(): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryPanel.scala",
+    "line": 53,
+    "name": "updateDisplay",
+    "signature": "  def updateDisplay(displayState: MoveHistoryDisplayState): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryPanel.scala",
+    "line": 56,
+    "name": "updateStatus",
+    "signature": "  def updateStatus(message: String): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryPanel.scala",
+    "line": 59,
+    "name": "render",
+    "signature": "  def render(state: MoveHistoryPanelState): Unit = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryView.scala",
+    "line": 34,
+    "name": "updateMoves",
+    "signature": "  def updateMoves(displayState: MoveHistoryDisplayState): Unit ="
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryView.scala",
+    "line": 43,
+    "name": "updateMoves",
+    "signature": "  def updateMoves("
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryView.scala",
+    "line": 98,
+    "name": "createMoveButton",
+    "signature": "  private def createMoveButton(text: String, highlighted: Boolean): Button = {"
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryView.scala",
+    "line": 117,
+    "name": "createVariationButton",
+    "signature": "  private def createVariationButton(previews: List[String], moveIndex: Int): Button = {"
+  }

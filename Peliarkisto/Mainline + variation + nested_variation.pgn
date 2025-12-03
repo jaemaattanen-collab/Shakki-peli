@@ -1,0 +1,11 @@
+[Annotator "Chess Application"]
+[Event "Casual Game"]
+[White "Player"]
+[PlyCount "23"]
+[Black "Player"]
+[Round "-"]
+[Date "2025-11-24"]
+[Site "Local Game"]
+[Result "*"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 (3. Bb5 Nf6 4. Nc3 d6 (4... d5 5. exd5 Nxd5 6. Nxe5 Nxc3 7. dxc3 Qxd1+ 8. Kxd1 Bg4+ 9. f3 Be6 10. Nxc6 bxc6 11. Bxc6+ Kd8 12. Bxa8) 5. O-O) Nf6 4. Nc3 d6 5. O-O *

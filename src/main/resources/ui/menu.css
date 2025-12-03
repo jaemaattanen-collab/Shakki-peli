@@ -1,0 +1,42 @@
+.main-menu-bar {
+  -fx-background-color: linear-gradient(#6b7c9f, #676b75ff);
+  -fx-border-color: #1f2430;
+  -fx-border-width: 0 0 1 0;
+  -fx-padding: 0 10 0 10;
+}
+
+.main-menu-bar .label {
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+}
+
+.main-menu-bar .menu-button {
+  -fx-background-color: transparent;
+}
+
+.main-menu-bar .menu-button:focused {
+  -fx-background-color: rgba(255, 255, 255, 0.18);
+}
+
+.context-menu {
+  -fx-background-color: #2a2f3a;
+  -fx-border-color: #1a1d27;
+  -fx-border-width: 1;
+  -fx-padding: 4 0 4 0;
+}
+
+.context-menu .label {
+  -fx-text-fill: white;
+}
+
+.menu-item:focused {
+  -fx-background-color: #3b4b65;
+}
+
+.check-menu-item:focused {
+  -fx-background-color: #3b4b65;
+}
+
+.check-menu-item .check {
+  -fx-mark-color: #7ec0ff;
+}

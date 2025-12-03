@@ -1,0 +1,296 @@
+[
+  {
+    "file": "src/main/scala/chess/analysis/EngineConfig.scala",
+    "line": 23,
+    "name": "depthDescription",
+    "signature": "  def depthDescription: String = depth match {",
+    "id": 2
+  },
+  {
+    "file": "src/main/scala/chess/analysis/FENGenerator.scala",
+    "line": 150,
+    "name": "parseFEN",
+    "signature": "  def parseFEN(fen: String): Map[String, String] = {",
+    "id": 9
+  },
+  {
+    "file": "src/main/scala/chess/analysis/MoveNotationConverter.scala",
+    "line": 17,
+    "name": "uciToChessNotation",
+    "signature": "  def uciToChessNotation(uciMove: String, board: Board): String = {",
+    "id": 10
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 182,
+    "name": "updateConfig",
+    "signature": "  def updateConfig(newConfig: EngineConfig): Unit = {",
+    "id": 17
+  },
+  {
+    "file": "src/main/scala/chess/analysis/StockfishEngine.scala",
+    "line": 206,
+    "name": "getBestMove",
+    "signature": "  def getBestMove(fen: String, timeMs: Int = 1000): Future[Option[String]] = {",
+    "id": 19
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 114,
+    "name": "updateSquarePositions",
+    "signature": "  def updateSquarePositions(): Unit =",
+    "id": 31
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 196,
+    "name": "getSquareAt",
+    "signature": "  def getSquareAt(x: Int, y: Int): Option[Square] =",
+    "id": 35
+  },
+  {
+    "file": "src/main/scala/chess/board/Board.scala",
+    "line": 228,
+    "name": "clearAllHighlights",
+    "signature": "  def clearAllHighlights(): Unit =",
+    "id": 38
+  },
+  {
+    "file": "src/main/scala/chess/board/Square.scala",
+    "line": 18,
+    "name": "highlightType",
+    "signature": "  def highlightType: Option[HighlightType] = _highlightType",
+    "id": 41
+  },
+  {
+    "file": "src/main/scala/chess/board/Square.scala",
+    "line": 51,
+    "name": "drawWeakness",
+    "signature": "  def drawWeakness(): Unit =",
+    "id": 49
+  },
+  {
+    "file": "src/main/scala/chess/core/AlgebraicNotationParser.scala",
+    "line": 19,
+    "name": "parseAndExecute",
+    "signature": "  def parseAndExecute(notation: String, board: Board, controller: GameController, isWhite: Boolean): Boolean = {",
+    "id": 84
+  },
+  {
+    "file": "src/main/scala/chess/core/NotationManager.scala",
+    "line": 39,
+    "name": "getNotation",
+    "signature": "  def getNotation(): String = moves.mkString(\" \")",
+    "id": 93
+  },
+  {
+    "file": "src/main/scala/chess/core/NotationManager.scala",
+    "line": 55,
+    "name": "reset",
+    "signature": "  def reset(): Unit = clear()",
+    "id": 96
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 64,
+    "name": "collectVariation",
+    "signature": "    def collectVariation(pgnVariation: PGNVariation): Unit = {",
+    "id": 107
+  },
+  {
+    "file": "src/main/scala/chess/pgn/LiveVariationRepository.scala",
+    "line": 98,
+    "name": "variationToPGN",
+    "signature": "  private def variationToPGN(lv: LiveVariation): PGNVariation = {",
+    "id": 110
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNExporter.scala",
+    "line": 16,
+    "name": "exportGame",
+    "signature": "  def exportGame(",
+    "id": 113
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNExporter.scala",
+    "line": 61,
+    "name": "exportGameWithHeaders",
+    "signature": "  def exportGameWithHeaders(",
+    "id": 115
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 46,
+    "name": "loadPGNFromString",
+    "signature": "  def loadPGNFromString(pgnText: String): Either[String, PGNGame] = {",
+    "id": 124
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 80,
+    "name": "getCurrentPGNString",
+    "signature": "  def getCurrentPGNString: String = {",
+    "id": 126
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 87,
+    "name": "getCurrentPGN",
+    "signature": "  def getCurrentPGN: Option[PGNGame] = currentPGN",
+    "id": 127
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 92,
+    "name": "getHeaders",
+    "signature": "  def getHeaders: Map[String, String] = {",
+    "id": 128
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 106,
+    "name": "updateHeader",
+    "signature": "  def updateHeader(key: String, value: String): Unit = {",
+    "id": 130
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 114,
+    "name": "getResult",
+    "signature": "  def getResult: Option[String] = {",
+    "id": 131
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 121,
+    "name": "setResult",
+    "signature": "  def setResult(result: String): Unit = {",
+    "id": 132
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 128,
+    "name": "getPGNMoves",
+    "signature": "  def getPGNMoves: List[PGNMove] = {",
+    "id": 133
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 135,
+    "name": "convertToPGNMoves",
+    "signature": "  def convertToPGNMoves: List[PGNMove] = {",
+    "id": 134
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 144,
+    "name": "validatePGN",
+    "signature": "  def validatePGN(pgnText: String): (Boolean, List[String], List[String]) = {",
+    "id": 135
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 155,
+    "name": "getPGNStats",
+    "signature": "  def getPGNStats: Map[String, Any] = {",
+    "id": 136
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 181,
+    "name": "clearPGN",
+    "signature": "  def clearPGN(): Unit = {",
+    "id": 137
+  },
+  {
+    "file": "src/main/scala/chess/pgn/PGNManager.scala",
+    "line": 188,
+    "name": "hasUnsavedChanges",
+    "signature": "  def hasUnsavedChanges: Boolean = {",
+    "id": 138
+  },
+  {
+    "file": "src/main/scala/chess/pieces/Piece.scala",
+    "line": 37,
+    "name": "promoteTo",
+    "signature": "  def promoteTo(newType: String): Unit =",
+    "id": 197
+  },
+  {
+    "file": "src/main/scala/chess/state/Position.scala",
+    "line": 24,
+    "name": "equals",
+    "signature": "  override def equals(other: Any): Boolean = other match",
+    "id": 208
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 105,
+    "name": "snapshotLines",
+    "signature": "  def snapshotLines: Seq[String] =",
+    "id": 213
+  },
+  {
+    "file": "src/main/scala/chess/ui/AnalysisManager.scala",
+    "line": 246,
+    "name": "formatUciMove",
+    "signature": "  private def formatUciMove(uci: String): String =",
+    "id": 223
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 147,
+    "name": "showVariationPicker",
+    "signature": "  private def showVariationPicker(moveIndex: Int): Unit = {",
+    "id": 244
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 626,
+    "name": "fileLabel",
+    "signature": "    def fileLabel(text: String): Label = new Label(text) {",
+    "id": 261
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 832,
+    "name": "loadPGNFile",
+    "signature": "  private def loadPGNFile(file: File): Unit = {",
+    "id": 268
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXChessApp.scala",
+    "line": 1270,
+    "name": "handleMoveHistoryClick",
+    "signature": "  private def handleMoveHistoryClick(moveIndex: Int): Unit = {",
+    "id": 292
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryPanel.scala",
+    "line": 44,
+    "name": "clearOnMoveSelected",
+    "signature": "  def clearOnMoveSelected(): Unit =",
+    "id": 298
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryPanel.scala",
+    "line": 50,
+    "name": "clearOnVariationSelected",
+    "signature": "  def clearOnVariationSelected(): Unit =",
+    "id": 300
+  },
+  {
+    "file": "src/main/scala/chess/ui/ScalaFXMoveHistoryPanel.scala",
+    "line": 59,
+    "name": "render",
+    "signature": "  def render(state: MoveHistoryPanelState): Unit = {",
+    "id": 303
+  },
+  {
+    "file": "src/main/scala/chess/utils/NoOpImgeObserver.scala",
+    "line": 12,
+    "name": "imageUpdate",
+    "signature": "  override def imageUpdate(img: Image, infoflags: Int, x: Int, y: Int, width: Int, height: Int): Boolean = false",
+    "id": 311
+  }
+]
