@@ -27,8 +27,10 @@ venv/
 __pycache__/
 
 # Stockfish binary (can be downloaded separately)
-stockfish*
+stockfish
+stockfish.exe
 !stockfish*.md
+!**/StockfishEngine.scala
 
 # Local config files
 .env
